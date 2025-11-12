@@ -4,27 +4,15 @@
     box-sizing: border-box;
 }
 html, body{
+      min-height: 100%;
+    background: radial-gradient(circle at center, rgba(127, 29, 29, 0.2) 0%, transparent 35%),
+                linear-gradient(135deg, #000000 0%, #1A0000 55%, #5C0A0A 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow-x: hidden;
+  
 }
-.bg-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at center, rgba(127, 29, 29, 0.2) 0%, transparent 35%),
-              linear-gradient(135deg, #000000 0%, #1A0000 55%, #5C0A0A 100%);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-}
-
 /* nav bar styling */
 .menu{
     width: 100%;
