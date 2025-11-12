@@ -45,6 +45,14 @@ a{
     color: #dcdcdc;
     font-size: 30px;
 }
+a:hover{
+    color: #b91c1c;
+    cursor: pointer;
+    border: #b91c1c 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    transition: ease-in-out 0.1s;
+}
 .navlist{
     list-style: none;
     display: flex;
@@ -154,6 +162,11 @@ a{
     justify-content: center;
     align-items: center;
 }
+.skillsdiv:hover{
+    transform: scale(1.05);
+    transition: ease-in-out 0.3s;
+    color: #b91c1c;
+}
 .projectsec{
     width: 100%;
     height: fit-content;
@@ -180,7 +193,7 @@ a{
 }
 .project{
     width: 400px;
-    height: 200px;
+    height: 300px;
     padding-block: 20px;
     padding-inline: 20px;
     display: flex;
@@ -315,7 +328,10 @@ textarea{
     a{
         font-size: 20px;
     }
-    
+    .project{
+        width: 400px;
+        height: 200px;
+    }
 }
 @media(max-width: 1300px){
     .navlist.show{
@@ -539,4 +555,3 @@ textarea{
         font-size: 10px;
     }
 }
-
