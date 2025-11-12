@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 body{
+  body{
   background: radial-gradient(circle at center, rgba(127, 29, 29, 0.2) 0%, transparent 35%),
               linear-gradient(135deg, #000000 0%, #1A0000 55%, #5C0A0A 100%);
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  
+  background-size: cover;
+  background-position: center;
+  } 
 }
 html, body {
   overflow-x: hidden;
