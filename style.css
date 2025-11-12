@@ -502,6 +502,22 @@ textarea{
         flex-direction: column;
         gap: 40px;
     }
+    input, .sendbtn{
+        width: 230px;
+        height: 35px;
+        font-size: 13px;
+    }
+    textarea{
+        width: 230px;
+        height: 80px;
+        font-size: 13px;
+    }
+    .footer{
+        height: 40px;
+    }
+    .f_para{
+        font-size: 12px;
+    }
 }
 @media(max-width: 400px){
     .aboutpara{
@@ -513,7 +529,7 @@ textarea{
         font-size: 15px;
     }
     .project{
-        width: 200px;
+        width: 230px;
         height: 150px;
     }
     .p_heading{
