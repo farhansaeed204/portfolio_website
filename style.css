@@ -3,17 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-  background: radial-gradient(circle at center, rgba(127, 29, 29, 0.2) 0%, transparent 35%),
-              linear-gradient(135deg, #000000 0%, #1A0000 55%, #5C0A0A 100%);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+html, body{
+      min-height: 100%;
+    background: radial-gradient(circle at center, rgba(127, 29, 29, 0.2) 0%, transparent 35%),
+                linear-gradient(135deg, #000000 0%, #1A0000 55%, #5C0A0A 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
   
 }
-html, body {
-  overflow-x: hidden;
-}
-
+/* nav bar styling */
 .menu{
     width: 100%;
     height: fit-content;
@@ -59,6 +59,7 @@ a:hover{
     gap: 50px;
     
 }
+/* hero section styling */
 .herosec{
     width: 100%;
     height: 700px;
@@ -102,6 +103,7 @@ a:hover{
     border-radius: 20px;
     
 }
+/* about section styling */
 .about{
     width: 100%;
     height: fit-content;
@@ -125,6 +127,8 @@ a:hover{
     font-size: 30px;
     margin-bottom: 30px;
 }
+
+/* skills section styling */
 .skills{
     width: 100%;
     height: fit-content;
@@ -167,6 +171,8 @@ a:hover{
     transition: ease-in-out 0.3s;
     color: #b91c1c;
 }
+
+/* projects section styling */
 .projectsec{
     width: 100%;
     height: fit-content;
@@ -217,6 +223,8 @@ a:hover{
     color: #dcdcdc;
     font-size: 18px;
 }
+
+/* contact section styling */
 .contactsec{
     width: 100%;
     height: fit-content;
@@ -280,15 +288,16 @@ textarea{
 }
 
 .icons a {
-    color: #dcdcdc; /* Default color white */
+    color: #dcdcdc; 
     font-size: 30px;
     transition: 0.3s ease;
 }
 
 .icons a:hover {
-    color: var(--clr, #b91c1c); /* Hover color from inline variable */
-    transform: scale(1.1); /* Slight zoom effect */
+    color: var(--clr, #b91c1c);
+    transform: scale(1.1); 
 }
+/* footer styling */
 .footer{
     width: 100%;
     height: 60px;
@@ -301,6 +310,9 @@ textarea{
 .f_para{
     font-size: 20px;
 }
+
+/* responsive styling */
+/* lessthen 1450px size screen responsivnes */
 @media(max-width: 1450px){
     .menubar{
         display: block;
@@ -333,6 +345,8 @@ textarea{
         height: 200px;
     }
 }
+
+/* less then 1300px screen respons/ines */
 @media(max-width: 1300px){
     .navlist.show{
         width: 100%;
@@ -412,6 +426,8 @@ textarea{
         font-size: 15px;
     }
 }
+
+/* less then 930px screen responsiveness */
 @media(max-width: 930px){
     .heading{
         display: none;
@@ -455,6 +471,8 @@ textarea{
         font-size: 13px;
     }
 }
+
+/* less then 860px screen responsiveness */
 @media(max-width: 860px){
     .heading2{
         font-size: 20px;
@@ -498,6 +516,8 @@ textarea{
         font-size: 15px;
     }
 }
+
+/* less then 720px screen responsiveness */
 @media(max-width: 720px){
     .div1,.div2{
         flex-direction: column;
@@ -513,6 +533,8 @@ textarea{
         gap: 40px;
     }
 }
+
+/* less then 620px screen responsiveness */
 @media(max-width: 620px){
     .herosec{
         flex-direction: column;
@@ -535,17 +557,19 @@ textarea{
         font-size: 12px;
     }
 }
+
+/* less then 400px screen responsiveness */
 @media(max-width: 400px){
     .aboutpara{
         font-size: 12px;
     }
     .skillsdiv{
-        width: 230px;
+        width: 250px;
         height: 60px;
         font-size: 15px;
     }
     .project{
-        width: 230px;
+        width: 250px;
         height: 150px;
     }
     .p_heading{
