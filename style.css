@@ -546,8 +546,14 @@ textarea{
 /* less then 620px screen responsiveness */
 @media(max-width: 620px){
     .herosec{
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 40px;
+    }
+    .heropic{
+        border-radius: 50%;
+    }
+    .pic{
+        border-radius: 50%;
     }
     input, .sendbtn{
         width: 230px;
